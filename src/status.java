@@ -22,7 +22,7 @@ public class status {
 		String filePath="file:///"+file.getAbsolutePath();
 		System.out.println(filePath);
 		dr.get(filePath);
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		//判断是否被灰化
 		WebElement isEnable=dr.findElement(By.name("user"));
 		System.out.println("是否被灰化:"+isEnable.isEnabled());
